@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  width: 100%;
+  margin: 3em auto;
+}
+.new-task {
+  background-color: #2b4049;
+  color: #909094;
+  width: 100%;
+
+  border: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 3em;
+}
+.new-task input {
+  background-color: inherit;
+  font-size: 1.2rem;
+  color: #909094;
+  border: none;
+  outline: none;
+  padding: 0.75em;
+  border-top-left-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+}
+.new-task button {
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  padding: 0.75em;
+  border: none;
+  outline: none;
+}
+
+.todos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.todo {
+  background-color: #212d32;
+  color: #909094;
+  padding: 0.5em;
+  width: 100%;
+  border-radius: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.actions i {
+  background-color: #909094;
+  color: #212d32;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+.delete {
+  color: maroon !important;
+}
+.inprogress {
+  border-left: 5px solid green;
+}
+.incomplete {
+  border-left: 5px solid red;
+}
+.almost {
+  border-left: 5px solid blue;
+}
